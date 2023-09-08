@@ -1,6 +1,6 @@
 const {Character} = require('./character');
-const {Enemy} = require('./enemy');
-const {Food} = require('./food');
+// const {Enemy} = require('./enemy');
+// const {Food} = require('./food');
 
 class Player extends Character {
 

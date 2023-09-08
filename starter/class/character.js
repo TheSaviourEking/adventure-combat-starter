@@ -1,5 +1,5 @@
 const { Room } = require('./room');
-const { Item } = require('./item')
+const { Item } = require('./item');
 
 class Character {
 
@@ -30,9 +30,9 @@ class Character {
 
 }
 
-let room = new Room("Test Room", "A test room");
-let item = new Item("rock", "just a simple rock");
-let character = new Character('Character', 'an ordinary character', room);
+// let room = new Room("Test Room", "A test room");
+// let item = new Item("rock", "just a simple rock");
+// let character = new Character('Character', 'an ordinary character', room);
 // character.items.push(item);
 // character.applyDamage(100);
 // console.log(character.currentRoom)

@@ -1,5 +1,5 @@
-const { Room } = require('./room');
-const { Item } = require('./item');
+// const { Room } = require('./room');
+// const { Item } = require('./item');
 
 class Character {
 

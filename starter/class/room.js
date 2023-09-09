@@ -1,3 +1,5 @@
+const { getItemByName } = require('../_shared_methods')
+
 class Room {
 
   constructor(name, description) {
@@ -54,12 +56,14 @@ class Room {
   getItemByName(name) {
 
     // Fill this in
+    return getItemByName(this.items, name)
 
   }
 
   getEnemyByName(name) {
 
     // Fill this in
+    return getItemByName(this.getEnemies(), name);
 
   }
 }

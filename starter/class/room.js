@@ -1,5 +1,3 @@
-const { getItemByName } = require('../_shared_methods')
-
 class Room {
 
   constructor(name, description) {
@@ -36,7 +34,7 @@ class Room {
   }
 
   getExitsString() {
-    return `Exits: ${this.getExits().join(", ")}`
+    return `Exits: ${this.getExits().join(", ")}`;
   }
 
   connectRooms(direction, connectingRoom) {
@@ -56,18 +54,23 @@ class Room {
   getItemByName(name) {
 
     // Fill this in
-    return getItemByName(this.items, name)
-
-  }
+    for (let item of this.items) {
+        if (item.name === name) return item;
+    }
+}
 
   getEnemyByName(name) {
 
     // Fill this in
-    return getItemByName(this.getEnemies(), name);
+    let enemies = this.getEnemies();
+
+    for (let enemy of enemies) {
+      if (enemy.name === name) return enemy;
+    }
 
   }
 }
 
 module.exports = {
-  Room
+  Room,
 };
